@@ -1,0 +1,264 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-repeat: no-repeat;
+    background-image: url(ffp.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header {
+    background: transparent;
+    color: #fff;
+    padding: 1em 0;
+    justify-content: space-between;
+    display: flex;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+nav  li ul li{
+    display: none;
+    background-color: #fff;
+    padding: 5px;
+    color: black;
+    border: solid 1px rgb(0, 0, 0);
+}
+nav  li ul li a{
+    color: black;
+}
+nav li:hover ul li{
+    display: block;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 10px 0;
+}
+
+@media (max-width: 600px) {
+    footer {
+        position: static;
+        padding: 20px 0;
+    }
+}
+
+.profile-picture img {
+    max-width: 150px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+/* Bouton Retour en haut */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ff5722;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    z-index: 1000;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.back-to-top:hover {
+    background-color: #e64a19;
+}
+.icon {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    margin-right: 10px;
+}
+#social-media {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#social-media h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+#social-media ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#social-media ul li {
+    display: inline-block;
+}
+
+#social-media ul li a img.icon {
+    width: 40px; /* Taille des icônes */
+    height: 40px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+#social-media ul li a img.icon:hover {
+    transform: scale(1.1); /* Effet zoom au survol */
+    opacity: 0.8; /* Légère transparence */
+}
+@media (max-width: 600px) {
+    #social-media ul {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    #social-media ul li a img.icon {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+/* Removed extra curly brace */
+
+.container {
+    max-width: 600px;
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    margin: 20px auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #4a0887;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #f0d28a;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .skills-section {
+    padding: 50px 20px;
+  }
+  
+  .skills-section h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .skills-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+  
+  .skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .skills-block {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  .skills-block h4 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    color: #f0d28a;
+  }
+  
+  .icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .icon {
+    text-align: center;
+    width: 80px;
+  }
+  
+  .icon img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+  }
+  
+  .icon p {
+    font-size: 0.9rem;
+    color: #d1b067;
+  }
