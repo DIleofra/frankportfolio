@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veille Technologique</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .typing {
+            font-family: Arial, sans-serif;
+            font-size: 18px;
+            color: #1C2833;
+            white-space: pre-line;
+            border-right: 2px solid black;
+            display: inline-block;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Évolution de la cybersécurité et du pentesting</h1>
+        <section>
+            <h2 style="color: #2E86C1;">Définition de la cybersécurité dans le pentesting</h2>
+            <p id="typing-text" class="typing"></p>
+        </section>
+    </header>
+    <main>
+        <table>
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Sujet</th>
+                    <th>Source</th>
+                    <th>Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr>
+                    <td>2024-09-30</td>
+                    <td>Cybersécurité : les bonnes pratiques</td>
+                    <td><a href="https://www.openbee.com/articles/cybersecurite-les-bonnes-pratiques/?utm_source=chatgpt.com" target="_blank">10 Stratégies de Cybersécurité pour les entreprises en 2024</a></td>
+                    <td>Cet article présente des stratégies essentielles pour les entreprises contre les cyberattaques.</td>
+                </tr>
+                <tr>
+                    <td>2024-10-12</td>
+                    <td>L'évolution du pentester</td>
+                    <td><a href="https://www.cybersecurity-insiders.com/pentesting-evolution/" target="_blank">L'évolution du pentesting en 2024</a></td>
+                    <td>Un article détaillant les nouvelles tendances et techniques en pentesting pour 2024.</td>
+                </tr>
+                <tr>
+                    <td>2025-01-13</td>
+                    <td>De la méthode traditionnelle de pentesting au PTaaS et CTEM</td>
+                    <td><a href="https://www.forbes.com/councils/forbestechcouncil/2025/01/13/the-evolution-of-cybersecurity-from-traditional-penetration-testing-to-ptaas-and-ctem/" target="_blank">Forbes : L'évolution de la cybersécurité vers le PTaaS et le CTEM</a></td>
+                    <td>Analyse de la transition du pentesting traditionnel vers des approches modernes comme le PTaaS et le CTEM.</td>
+                </tr>
+                <tr>
+                    <td>2024-12-16</td>
+                    <td>Pourquoi le pentesting devient obsolète</td>
+                    <td><a href="https://teckpath.com/the-evolution-of-cybersecurity-why-penetration-testing-is-becoming-a-thing-of-the-past/" target="_blank">TeckPath : L'évolution de la cybersécurité</a></td>
+                    <td>Examen des raisons pour lesquelles le pentesting traditionnel est en déclin face aux nouvelles méthodes de cybersécurité.</td>
+                </tr>
+                <tr>
+                    <td>2024-11-04</td>
+                    <td>La cybersécurité : une fonction multifacettes</td>
+                    <td><a href="https://www.lemonde.fr/emploi/article/2024/11/04/c-est-un-metier-la-cybersecurite-tantot-ingenieur-tantot-juriste-une-fonction-multifacettes_6374889_1698637.html" target="_blank">Le Monde : La cybersécurité, une fonction multifacettes</a></td>
+                    <td>Discussion sur la diversification rapide des métiers de la cybersécurité et l'importance de la formation interne.</td>
+                </tr>
+                <tr>
+                    <td>2024-07-24</td>
+                    <td>Sécurité des infrastructures critiques : perspectives du pentesting</td>
+                    <td><a href="https://arxiv.org/abs/2407.17256" target="_blank">ArXiv : Sécurité des infrastructures critiques</a></td>
+                    <td>Étude sur l'importance du pentesting pour identifier et résoudre les vulnérabilités dans les infrastructures critiques.</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <script>
+        const text = `La cybersécurité dans le pentesting (test d'intrusion) désigne l'ensemble des méthodes, techniques et outils utilisés pour évaluer la sécurité d'un système informatique, d'un réseau ou d'une application en simulant des cyberattaques réelles.
+
+Objectif du Pentesting en Cybersécurité
+L'objectif principal est d'identifier les vulnérabilités potentielles avant qu'elles ne soient exploitées par des attaquants malveillants. Il permet de :
+- Détecter les failles de sécurité (logiciels obsolètes, mauvaises configurations, erreurs humaines).
+- Évaluer la robustesse des mesures de protection en place.
+- Recommander des corrections pour renforcer la sécurité.
+
+Méthodologies Utilisées
+Les pentesters suivent généralement des cadres reconnus comme :
+- OWASP (Open Web Application Security Project) pour la sécurité des applications web.
+- MITRE ATT&CK pour comprendre les tactiques et techniques des cyberattaques.
+- NIST SP 800-115 qui fournit des recommandations pour les tests de sécurité.
+
+Types de Tests d'Intrusion
+- Black Box Testing (Boîte Noire) : le pentester n'a aucune information préalable sur le système.
+- White Box Testing (Boîte Blanche) : le pentester a un accès complet aux informations internes.
+- Grey Box Testing (Boîte Grise) : un accès partiel est donné pour simuler un attaquant interne.`;
+
+        let index = 0;
+        function typeEffect() {
+            if (index < text.length) {
+                document.getElementById("typing-text").textContent += text.charAt(index);
+                index++;
+                setTimeout(typeEffect, 20);
+            } else {
+                document.getElementById("typing-text").style.borderRight = "none";
+            }
+        }
+
+        window.onload = typeEffect;
+    </script>
+</body>
+</html>

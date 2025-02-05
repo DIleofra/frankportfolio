@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 class="name">Dieudo Frank Leonel</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="#">Profil</a>
+                    <ul>
+                        <li><a href="about.html">À propos de moi</a></li>
+                        <li><a href="skills.html">Compétences Clés</a></li>
+                        <li><a href="projects.html">Projets Réalisés</a></li>
+                        <li><a href="education.html">Éducation</a></li>
+                        <li><a href="experience.html">Expérience</a></li>
+                        <li><a href="personal-projects.html">Projets Personnels</a></li>
+                        <li><a href="projet-veille-technologique/index.html">Ma veille technologique</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html"><button onclick="contact.html">Contact</button></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        
+        <section>
+            <h2>Contact</h2>
+            <p>Email : <a href="mailto:dieudofrank@gmail.com">dieudofrank@gmail.com</a></p>
+            <p>Téléphone : +33 6 41 76 74 2</p> <section id="social-media">
+                <style>
+                    @keyframes pulse {
+                        0% {
+                            transform: scale(1);
+                        }
+                        50% {
+                            transform: scale(1.1);
+                        }
+                        100% {
+                            transform: scale(1);
+                        }
+                    }
+    
+                    #social-media .icon {
+                        animation: pulse cubic-bezier(0.6, 0.04, 0.98, 0.335) 1s infinite;
+                    }
+                </style>
+                <h3>mes reséaux:</h3>
+                <ul>
+                    <li><a href="https://www.instagram.com/votre_nom" target="_blank" rel="noopener noreferrer"><img src="images/instagram-icon.png" alt="Instagram" class="icon"></a></li>
+                    <li><a href="https://www.facebook.com/votre_nom" target="_blank" rel="noopener noreferrer"><img src="images/facebook-icon.png" alt="Facebook" class="icon"></a></li>
+                    <li><a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"><img src="images/youtube-icon.png" alt="YouTube" class="icon"></a></li>
+                    <li><a href="https://www.pinterest.com/votre_nom" target="_blank" rel="noopener noreferrer"><img src="images/pinterest-icon.png" alt="Pinterest" class="icon"></a></li>
+                    <li><a href="https://www.linkedin.com/votre_nom" target="_blank" rel="noopener noreferrer"><img src="images/linkedin.png" alt="linkedin" class="icon"></a></li>
+                    
+                </ul>
+                
+            </section>
+        </section>
+        <div class="container">
+            <h1>Contactez-Moi</h1>
+            <form id="contactForm" action="contact.php" method="post" style="background: transparent;">
+                <label for="name">Nom:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                
+                <button type="submit">Envoyer</button>
+            </form>
+        </div>
+    </main>
+   
+       
+        <footer>
+            <button class="back-to-top">↑ Retour en haut</button>
+            <style>
+                footer {
+                    position: fixed;
+                    bottom: 0;
+                    width: 100%;
+                    background-color: #0a08089a;
+                    text-align: center;
+                    padding: 10px 0;
+                    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+                }
+
+                .back-to-top {
+                    display: none;
+                    position: fixed;
+                    bottom: 20px;
+                    right: 20px;
+                    background-color: #000;
+                    color: #fff;
+                    border: none;
+                    padding: 10px;
+                    cursor: pointer;
+                    border-radius: 5px;
+                }
+
+                @media (max-width: 600px) {
+                    footer {
+                        padding: 5px 0;
+                    }
+                }
+            </style>
+            <script>
+                window.addEventListener('scroll', function() {
+                    const backToTopButton = document.querySelector('.back-to-top');
+                    if (window.scrollY > 300) {
+                        backToTopButton.style.display = 'block';
+                    } else {
+                        backToTopButton.style.display = 'none';
+                    }
+                });
+
+                document.querySelector('.back-to-top').addEventListener('click', function() {
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth'
+                    });
+                });
+            </script>
+            <p>&copy; 2024 Frank. Tous droits réservés.</p>
+        </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
